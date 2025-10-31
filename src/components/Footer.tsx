@@ -43,17 +43,19 @@ export default function Footer() {
             <p className="text-sm font-semibold">{time} GMT+5:30</p>
           </span>
         </span>
-        <Link
-          href="mailto:umesh.sharma@example.com"
-          passHref
-          className="text-xs text-muted-foreground hover:text-foreground"
-        >
-          <Button variant={"outline"}>
-            <MailIcon className="h-4 w-4 md:mr-2" />
-            <span className="hidden md:flex">umesh.sharma@example.com</span>
-          </Button>
-        </Link>
-      </div>
+      </div>)
+       <Link 
+       href="mailto:qgj79cbcjd@privaterelay.appleid.com"
+       aria-label="Email" 
+       className="text-xs text-muted-foreground hover:text-foreground">
+  <Button asChild variant="outline">
+    <span className="inline-flex items-center">
+      <MailIcon className="h-4 w-4 md:mr-2" />
+      <span className="hidden md:flex">qgj79cbcjd@privaterelay.appleid.com</span>
+    </span>
+  </Button>
+</Link>
+
       <div className="h-1 bg-[radial-gradient(closest-side,#8486ff,#42357d,#5d83ff,transparent)] opacity-50" />
     </footer>
   );
