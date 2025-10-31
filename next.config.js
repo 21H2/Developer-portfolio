@@ -29,6 +29,9 @@ const config = withPWA({
     locales: ["en"],
     defaultLocale: "en",
   },
+
+  // Enable Turbopack explicitly (empty object to opt into Turbopack)
+  turbopack: {},
 });
 
 export default config;

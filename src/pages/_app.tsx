@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import "@/styles/locomotive-scroll.css";
 
 import { DM_Sans } from "next/font/google";
+import { useEffect, useState } from "react";
 
 const dmSans = DM_Sans({
   display: "swap",
@@ -11,9 +12,15 @@ const dmSans = DM_Sans({
 });
 
 const MyApp: AppType = ({ Component, pageProps }) => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <div lang={"en"} className={dmSans.className}>
-      <Component {...pageProps} />
+      {mounted ? <Component {...pageProps} /> : null}
       <Analytics />
     </div>
   );

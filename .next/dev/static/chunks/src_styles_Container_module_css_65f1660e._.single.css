@@ -1,0 +1,136 @@
+/* [project]/src/styles/Container.module.css [client] (css) */
+.Container-module__ARXKpa__nav {
+  z-index: 40;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+@media (min-width: 1536px) {
+  .Container-module__ARXKpa__nav {
+    padding-left: 17rem;
+    padding-right: 17rem;
+  }
+}
+
+.Container-module__ARXKpa__nav .Container-module__ARXKpa__desktop-nav {
+  align-items: center;
+  display: none;
+}
+
+.Container-module__ARXKpa__nav .Container-module__ARXKpa__desktop-nav > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.Container-module__ARXKpa__nav .Container-module__ARXKpa__desktop-nav {
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .Container-module__ARXKpa__nav .Container-module__ARXKpa__desktop-nav {
+    display: flex;
+  }
+}
+
+.Container-module__ARXKpa__burger-button {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: calc(var(--radius)  - 2px);
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  transition-property: all;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  animation-duration: .3s;
+  display: inline-flex;
+}
+
+.Container-module__ARXKpa__burger-button:focus {
+  outline-offset: 2px;
+  outline: 2px solid #0000;
+}
+
+.Container-module__ARXKpa__burger {
+  background-color: #0000;
+  border-width: 0;
+  width: 10rem;
+  height: 10rem;
+  transition-property: opacity;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  animation-duration: .3s;
+  position: relative;
+}
+
+.Container-module__ARXKpa__burger svg {
+  --tw-translate-x: 200%;
+  --tw-translate-y: -38%;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+  transition-property: transform;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  animation-duration: .3s;
+  top: 50%;
+  left: 50%;
+}
+
+.Container-module__ARXKpa__burger svg[data-hide="true"] {
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0;
+}
+
+.Container-module__ARXKpa__introduction {
+  z-index: 99;
+  background-color: #0a0a13;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+}
+
+.Container-module__ARXKpa__introduction svg {
+  width: 100%;
+  height: calc(100% + 300px);
+  position: absolute;
+  top: 0;
+}
+
+.Container-module__ARXKpa__introduction svg path {
+  fill: #0a0a13;
+}
+
+.Container-module__ARXKpa__introduction p {
+  color: #fff;
+  z-index: 1;
+  align-items: center;
+  font-size: 42px;
+  display: flex;
+  position: absolute;
+}
+
+.Container-module__ARXKpa__introduction p span {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  display: block;
+}
+
+/*# sourceMappingURL=src_styles_Container_module_css_65f1660e._.single.css.map*/
